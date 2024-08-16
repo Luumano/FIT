@@ -1,0 +1,115 @@
+/*----Estilo da tela de recuperar QR Code----*/
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #1f8efa;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    width: 100%;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #1f8efa;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.form label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+form button:hover {
+    background: #106bb4;
+}
+
+#qrcode-container {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#qrcode-container h2 {
+    margin-bottom: 15px;
+}
+
+#qrcode {
+    margin: 0 auto;
+}
+
+#download-qrcode {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #1f8efa;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+#download-qrcode:hover {
+    background: #106bb4;
+}

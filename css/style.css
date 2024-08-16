@@ -1,0 +1,175 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #F4F4F4;
+}
+
+h1{
+    text-align: center;
+}
+/*--------Inicio Estilo Login------------*/
+.login-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.login-user, .login-admin{
+    width: 45%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form button{
+    padding: 10px;
+    margin: 5px 0;
+}
+
+form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover{
+    background-color: #218838;
+}
+/*-----------Fim----------------------*/
+
+.event-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-item{
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.event-item:hover{
+    background-color: #e0e0e0;
+}
+
+.event-title{
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.event-summary{
+    font-size: 14px;
+    color: #666;
+}
+
+.event-details{
+    display: none;
+    margin-top: 10px;
+}
+
+.event-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.event-form input{
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.event-form button{
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event-form button:hover{
+    background-color: #218838;
+}
+
+.registration-success{
+    margin-top: 20px;
+}
+
+#registration-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#registration-table th, #registration-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#confirmation-message{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d4edda;
+    padding: 10px 20px;
+    border: 1px solid #5cb85c;
+    border-radius: 5px;
+    color: #5cb85c;
+}
+
+#qrcode-1{
+    margin-top: 10px;
+}
+
+a#download-1{
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a#download-1:hover{
+    text-decoration: underline;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td{
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th{
+    background-color: #f4f4f4;
+}
+
+.confirmed{
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.not-confirmed{
+    color: #470202;
+}
+
+#reader{
+    margin: 20px auto;
+    text-align: center;
+}

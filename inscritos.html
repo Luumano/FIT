@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inscrições - FIT</title>
+</head>
+<body>
+    <h1>Inscritos</h1>
+    <button id="openCameraButton">Abrir Câmera</button>
+    <video id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+
+    <table id="registration-table">
+        <thead>
+            <tr>
+                <th>Matrícula</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Evento</th>
+                <th>Hora</th>
+            </tr>
+        </thead>
+            <tbody>
+
+            </tbody>
+    </table>
+    <table id="registration-tableAlunos">
+        <thead>
+            <tr>
+                <th>CPF</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Evento</th>
+                <th>Hora</th>
+            </tr>
+        </thead>
+            <tbody>
+
+            </tbody>
+    </table>
+    <button id="downloadExcel">Baixar Tabela</button>
+    <script src="https://unpkg.com/jsqr/dist/jsQR.js"></script>
+    <script src="js/scriptIn.js"></script>
+</body>
+</html>

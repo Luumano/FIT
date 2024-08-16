@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Eventos - FIT</title>
+</head>
+<body>
+    <h1>Lista de Eventos do FIT 2024</h1>
+    <nav>
+        <ul>
+            <li><a href="principal.html">Principal</a></li>
+            <li><a href="recuperar_qrcode.html">Recuperar QR Code</a></li>
+            <li><a href="perfil.html">Peril</a></li>
+        </ul>
+    </nav>
+    <ul class="event-list">
+        <li class="event-item" onclick="toggleDetails(1)">
+            <h2 class="event-title">Evento 1</h2>
+            <p class="event-summary">Resumo breve do evento 1.</p>
+            <div class="event-details" id="details-1" onclick="event.stopPropagation()">
+                <p>Detalhes adicionais sobre o evento. Data: 01/08/2024. Local: Auditório</p>
+                <form class="event-form" onsubmit="event.preventDefault(); registerUser(1, 'matricula');">
+                    <input type="text" name="matricula" id="matricula-1" placeholder="Matrícula" required>
+                    <input type="text" name="nome" id="nome-1" placeholder="Nome" required>
+                    <input type="email" name="email" id="email-1" placeholder="Email" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+                <form class="event-form" onsubmit="event.preventDefault(); registerUser(1, 'cpf');">
+                    <h3>Cadastro para alunos de outras instituições</h3>
+                    <input type="text" name="cpf" id="cpf-1" placeholder="CPF" required>
+                    <input type="text" name="nome" id="nome-2" placeholder="Nome completo" required>
+                    <input type="email" name="email" id="email-2" placeholder="Email" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+                <div class="registration-success" id="success-1" style="display: none;">
+                    <p>Cadastrado com sucesso!</p>
+                    <p>Mostre o QR Code na entrada do evento!</p>
+                    <div id="qrcode-1"></div>
+                    <a id="download-1" download="qrcode.png">Baixar QR Code</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

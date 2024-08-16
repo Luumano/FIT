@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styless.css">
+    <title>Login - FIT</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-user">
+            <h2>Login Usuário</h2>
+            <form id="user-login-form" onsubmit="event.preventDefault(); userLogin();">
+                <label for="identificador">Matricula ou CPF</label>
+                <input type="text" id="user-identificador" placeholder="Digite sua Matricula ou CPF usados na hora do cadastro" required>
+                <label for="senha">Senha</label>
+                <input type="password" id="user-password" placeholder="Digite sua Senha" required>
+                <button type="submit">Entrar</button>
+                <a href="cadastro.html">Ainda não tem cadastro?</a>
+            </form>
+        </div>
+        <div class="login-admin">
+            <h2>Login STAFF - FIT</h2>
+            <form id="admin-login-user" onsubmit="event.preventDefault(); adminLogin();">
+                <input type="password" id="admin-password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

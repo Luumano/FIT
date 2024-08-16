@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - FIT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form class="event-form" id="registrationForm">
+        <h2>Tela de Cadastro</h2>
+        <label for="identificador">Matricula ou CPF</label>
+        <input type="text" name="identificador" id="identificador" placeholder="Digite sua Matrícula ou CPF" required>
+        <input type="hidden" name="tipo_identificador" id="tipo_identificador">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Senha" required>
+        <label for="curso">Curso:</label>
+        <input type="text" name="curso" id="curso" placeholder="Curso" required>
+        <button type="submit">Cadastrar</button>
+        <a href="index.html">Já está Cadastrado?</a>
+    </form>
+    <div id="successMessage" style="display: none; color: green;">Cadastro realizado com sucesso!</div>
+    <script src="js/cadastro.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
